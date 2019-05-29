@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProcessHistorian>
+  <TestCaseConfiguration>
+    <UseFixedDataSourceIdentity>True</UseFixedDataSourceIdentity>
+    <DataSourceSystemId>1.0.0.0.0.0</DataSourceSystemId>
+    <DataSourceNodeId>2.0.0.0.0.0</DataSourceNodeId>
+    <DataSourceTypeId>2</DataSourceTypeId>
+    <!-- Value=1 for WinCC Classic and Value=2 for WinCC UA-->
+
+    <ArchiveDataProgressNotificationEnabled>True</ArchiveDataProgressNotificationEnabled>
+    <LiveDataSubscriptionEnabled>False</LiveDataSubscriptionEnabled>
+
+    <TimeBound>True</TimeBound>
+    <DurationInMinutes>10</DurationInMinutes>
+    <TestMaxTimeoutInMinutes>120</TestMaxTimeoutInMinutes>
+
+    <NumberOfTags>1000</NumberOfTags>
+    <NumberOfAlarmMessages>10</NumberOfAlarmMessages>
+    <WriteRequestFrequencyInMilliSeconds>1000</WriteRequestFrequencyInMilliSeconds>
+    <NextSampleTimeGapInMilliSeconds>1000</NextSampleTimeGapInMilliSeconds>
+
+    <UseRandomValueSeriesIds>False</UseRandomValueSeriesIds>
+    <ValueSeriesIdStart>1</ValueSeriesIdStart>
+
+    <WriteTagValues>True</WriteTagValues>
+    <WriteAlarmValues>True</WriteAlarmValues>
+
+    <LatencyLogEnabled>True</LatencyLogEnabled>
+    <LogDirectory>C:\PHWriteNFRTestLogs</LogDirectory>
+
+    <PhCoreLoggingEnabled>True</PhCoreLoggingEnabled>
+    <IsTvsFileCountLoggingEnabled>True</IsTvsFileCountLoggingEnabled>
+
+    <LongTermArchiveEnabled>True</LongTermArchiveEnabled>
+    <PercentageOfLongTermArchiveRelevantTags>100</PercentageOfLongTermArchiveRelevantTags>
+    <LongTermArchiveConfigurationFileName>LTAConfiguration.xml</LongTermArchiveConfigurationFileName>
+
+    <DataStorageName>DefaultDataStorage</DataStorageName>
+    <LogPath>NFR\SimplePHApiWriter.log</LogPath>
+  </TestCaseConfiguration>
+
+  <TestCaseDescription>
+    <TestType>NFR</TestType>
+    <TestScenario>WinCCUA_Gen_PHCore_LTA</TestScenario>
+    <TestCategory>Write</TestCategory>
+    <TestCaseName>TC_GTV_1000_HLAS_10_LTA_100</TestCaseName>
+    <Description>Write NFR test to measure local latency and archiving latency for a given constant write load</Description>
+  </TestCaseDescription>
+
+</ProcessHistorian>

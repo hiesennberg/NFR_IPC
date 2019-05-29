@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DataCollectorSet>
+  <Status>0</Status><Duration>0</Duration><Description> </Description><DescriptionUnresolved> </DescriptionUnresolved><DisplayName> </DisplayName><DisplayNameUnresolved> </DisplayNameUnresolved><SchedulesEnabled>0</SchedulesEnabled><LatestOutputLocation>D:\NFR_Endurance_Test\</LatestOutputLocation><Name>PHDeactivateReactivateTest</Name><OutputLocation>D:\NFR_Endurance_Test\</OutputLocation><RootPath>D:\NFR_Endurance_Test</RootPath><Segment>0</Segment><SegmentMaxDuration>0</SegmentMaxDuration><SegmentMaxSize>0</SegmentMaxSize><SerialNumber>51</SerialNumber><Server> </Server><Subdirectory> </Subdirectory><SubdirectoryFormat>1</SubdirectoryFormat><SubdirectoryFormatPattern> </SubdirectoryFormatPattern><Task> </Task><TaskRunAsSelf>0</TaskRunAsSelf><TaskArguments> </TaskArguments><TaskUserTextArguments> </TaskUserTextArguments><UserAccount>SYSTEM</UserAccount><Security>O:BAG:DUD:AI(A;;FA;;;SY)(A;;FA;;;BA)(A;;FR;;;LU)(A;;0x1301ff;;;S-1-5-80-2661322625-712705077-2999183737-3043590567-590698655)(A;ID;FA;;;SY)(A;ID;FA;;;BA)(A;ID;0x1200ab;;;LU)(A;ID;FR;;;AU)(A;ID;FR;;;LS)(A;ID;FR;;;NS)</Security><StopOnCompletion>0</StopOnCompletion>
+  <PerformanceCounterDataCollector>
+    <DataCollectorType>0</DataCollectorType>
+    <Name>PHCounters</Name>
+    <FileName>NFRDeactivateReactivatePHTest.DataCollector</FileName>
+    <FileNameFormat>0</FileNameFormat>
+    <FileNameFormatPattern>MMddHHmm</FileNameFormatPattern>
+    <LogAppend>0</LogAppend>
+    <LogCircular>0</LogCircular>
+    <LogOverwrite>0</LogOverwrite>
+    <LatestOutputLocation>D:\WriteOutput\</LatestOutputLocation>
+    <DataSourceName> </DataSourceName>
+    <SampleInterval>1</SampleInterval>
+    <SegmentMaxRecords>0</SegmentMaxRecords>
+    <LogFileFormat>0</LogFileFormat>
+
+    <Counter>\Process(PHSFService)\Working Set - Private</Counter>
+	<Counter>\Processor(*)\% Processor Time</Counter>
+    <Counter>\Processor(*)\% User Time</Counter>
+    <Counter>\Process(PHSFService)\% Processor Time</Counter>
+    <Counter>\Process(PHSFService)\% Disk Time</Counter>
+    <Counter>\Process(PHSFService)\Thread Count</Counter>
+    <Counter>\Process(PHSFService)\Handle Count</Counter>
+
+    <Counter>\LogicalDisk(*)\% Disk Time</Counter>
+    <Counter>\LogicalDisk(*)\% Disk Read Time</Counter>
+    <Counter>\LogicalDisk(*)\% Disk Write Time</Counter>
+    <Counter>\PhysicalDisk(*)\% Disk Time</Counter>
+    <Counter>\PhysicalDisk(*)\% Disk Read Time</Counter>
+    <Counter>\PhysicalDisk(*)\% Disk Write Time</Counter>
+    <Counter>\LogicalDisk(*)\% Idle Time</Counter>
+    <Counter>\PhysicalDisk(*)\% Idle Time</Counter>
+
+
+    <Counter>\.NET CLR Memory(PHSFService)\Gen 0 heap size</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\Gen 1 heap size</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\Gen 2 heap size</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\Large Object Heap size</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\Finalization Survivors</Counter>
+
+    <Counter>\.NET CLR Memory(PHSFService)\Allocated Bytes/sec</Counter>
+
+    <Counter>\.NET CLR Memory(PHSFService)\% Time in GC</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\# Bytes in all Heaps</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\# Total committed Bytes</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\# Total reserved Bytes</Counter>
+    <Counter>\.NET CLR Memory(PHSFService)\# of Pinned Objects</Counter>
+
+
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\Gen 0 heap size</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\Gen 1 heap size</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\Gen 2 heap size</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\Large Object Heap size</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\Finalization Survivors</Counter>
+
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\Allocated Bytes/sec</Counter>
+
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\% Time in GC</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\# Bytes in all Heaps</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\# Total committed Bytes</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\# Total reserved Bytes</Counter>
+    <Counter>\.NET CLR Memory(SimplePHAPIWriter)\# of Pinned Objects</Counter>
+
+    <Counter>\Process(SimplePHAPIWriter)\Handle Count</Counter>
+    <Counter>\Process(SimplePHAPIWriter)\Thread Count</Counter>
+
+
+
+
+  </PerformanceCounterDataCollector>
+  <DataManager>
+    <Enabled>0</Enabled>
+    <CheckBeforeRunning>0</CheckBeforeRunning>
+    <MinFreeDisk>0</MinFreeDisk>
+    <MaxSize>0</MaxSize>
+    <MaxFolderCount>0</MaxFolderCount>
+    <ResourcePolicy>0</ResourcePolicy>
+    <ReportFileName>report.html</ReportFileName>
+    <RuleTargetFileName>report.xml</RuleTargetFileName>
+    <EventsFileName> </EventsFileName>
+  </DataManager>
+</DataCollectorSet>
+
+

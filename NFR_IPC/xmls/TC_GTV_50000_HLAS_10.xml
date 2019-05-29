@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProcessHistorian>
+  <TestCaseConfiguration>
+    <UseFixedDataSourceIdentity>True</UseFixedDataSourceIdentity>
+    <DataSourceSystemId>1.0.0.0.0.0</DataSourceSystemId>
+    <DataSourceNodeId>2.0.0.0.0.0</DataSourceNodeId>
+    <DataSourceTypeId>2</DataSourceTypeId>
+    <!-- Value=1 for WinCC Classic and Value=2 for WinCC UA-->
+
+    <ArchiveDataProgressNotificationEnabled>True</ArchiveDataProgressNotificationEnabled>
+    <LiveDataSubscriptionEnabled>False</LiveDataSubscriptionEnabled>
+
+    <TimeBound>True</TimeBound>
+    <DurationInMinutes>15</DurationInMinutes>
+
+    <NumberOfTags>50000</NumberOfTags>
+    <NumberOfAlarmMessages>10</NumberOfAlarmMessages>
+    <WriteRequestFrequencyInMilliSeconds>1000</WriteRequestFrequencyInMilliSeconds>
+    <NextSampleTimeGapInMilliSeconds>1000</NextSampleTimeGapInMilliSeconds>
+
+    <UseRandomValueSeriesIds>False</UseRandomValueSeriesIds>
+    <ValueSeriesIdStart>1</ValueSeriesIdStart>
+
+    <WriteTagValues>True</WriteTagValues>
+    <WriteAlarmValues>True</WriteAlarmValues>
+
+    <LatencyLogEnabled>True</LatencyLogEnabled>
+    <LogDirectory>D:\PHWriteNFRTestLogs</LogDirectory>
+    <IsTvsFileCountLoggingEnabled>True</IsTvsFileCountLoggingEnabled>
+
+    <!-- For Fast Filling of PHDB and Read-Only NFR Test-->
+    <WriteFast>False</WriteFast>
+    <DataAvailabilityDurationInHours>24</DataAvailabilityDurationInHours>
+    <WaitTimeAfterTestInSeconds>1200</WaitTimeAfterTestInSeconds>
+    <!-- data start datetime will be current day 00:00:00 AM-->
+
+    <PhCoreLoggingEnabled>True</PhCoreLoggingEnabled>
+  </TestCaseConfiguration>
+
+  <TestCaseDescription>
+    <TestType>NFR</TestType>
+    <TestScenario>WinCCUA_Gen_PHCore</TestScenario>
+    <TestCategory>Write</TestCategory>
+    <TestCaseName>TC_GTV_50000_HLAS_10</TestCaseName>
+    <Description>Write NFR test to measure local latency and archiving latency for a given constant write load</Description>
+  </TestCaseDescription>
+
+</ProcessHistorian>

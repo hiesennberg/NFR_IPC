@@ -1,0 +1,32 @@
+option,Exe,xml1,xml2,NewName
+0,C:\Users\Administrator\Desktop,null,null,null
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_GTV_BigQuery_reverse_LTA.xml,null,TC_GTV_BigQuery_WOE_reverse
+5,2,null,null,
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_GTV_SmallQuery_reverse_LTA.xml,null,TC_GTV_SmallQuery_WOE_reverse
+5,2,null,null,
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_HLAS_BigQuery_reverse_LTA.xml,null,TC_HLAS_BigQuery_WOE_reverse
+5,2,null,null
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_HLAS_SmallQuery_reverse_LTA.xml,null,TC_HLAS_SmallQuery_WOE_reverse
+5,2,null,null,null
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_GTV_BigQuery_LTA.xml,null,TC_GTV_BigQuery_WOE
+5,2,null,null,
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_GTV_SmallQuery_LTA.xml,null,TC_GTV_SmallQuery_WOE
+5,2,null,null,
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_HLAS_BigQuery_LTA.xml,null,TC_HLAS_BigQuery_WOE
+5,2,null,null
+2,\bin\PhApi4.0_IntegrationTests\SimplePHAPIReader.exe,\xmls\TC_HLAS_SmallQuery_LTA.xml,null,TC_HLAS_SmallQuery_WOE
+5,2,null,null
+6,C:\Program Files\Siemens\ProcessHistorian\bin\StoreAndForward2ServiceConfiguration_LTA.xml,\xmls\StoreAndForward2ServiceConfiguration_5minWOE_LTA.xml,null,null
+4,PHCoreLog,null,null,PHCoreLog
+4,FastWrite,null,null,FastWrite
+5,2,null,null,null
+1,\bin\PhApi4.0_IntegrationTests\SimplePHAPIWriter.exe,\xmls\TC_GTV_1000_HLAS_10_LTA.xml,null,TC_GTV_1000_HLAS_10_WOE_LTA
+4,GTV1000,null,null,GTV1000WE
+1,\bin\PhApi4.0_IntegrationTests\SimplePHAPIWriter.exe,\xmls\TC_GTV_10000_HLAS_10_LTA.xml,null,TC_GTV_10000_HLAS_10_WOE_LTA
+4,GTV10000,null,null,GTV10000WE
+1,\bin\PhApi4.0_IntegrationTests\SimplePHAPIWriter.exe,\xmls\TC_GTV_50000_HLAS_10_LTA.xml,null,TC_GTV_50000_HLAS_10_WOE_LTA
+4,GTV50000,null,null,GTV50000WE
+6,C:\Program Files\Siemens\ProcessHistorian\bin\StoreAndForward2ServiceConfiguration_LTA.xml,\xmls\StoreAndForward2ServiceConfiguration_60minWOE_LTA.xml,null,null
+4,PHCoreLog,null,null,PHCoreLog
+1,\bin\PhApi4.0_IntegrationTests\SimplePHAPIWriter.exe,\xmls\TC_PHCoreLoggingFastWrite_LTA.xml,null,FastWrite
+5,10,null,null,null

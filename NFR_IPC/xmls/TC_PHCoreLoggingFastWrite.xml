@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProcessHistorian>
+  <TestCaseConfiguration>
+    <UseFixedDataSourceIdentity>True</UseFixedDataSourceIdentity>
+    <DataSourceSystemId>1.0.0.0.0.0</DataSourceSystemId>
+    <DataSourceNodeId>2.0.0.0.0.0</DataSourceNodeId>
+    <DataSourceTypeId>2</DataSourceTypeId>
+    <!-- Value=1 for WinCC Classic and Value=2 for WinCC UA-->
+
+    <ArchiveDataProgressNotificationEnabled>True</ArchiveDataProgressNotificationEnabled>
+    <LiveDataSubscriptionEnabled>False</LiveDataSubscriptionEnabled>
+
+    <TimeBound>False</TimeBound>
+    <DurationInMinutes>0</DurationInMinutes>
+
+    <NumberOfTags>100</NumberOfTags>
+    <NumberOfAlarmMessages>10</NumberOfAlarmMessages>
+    <WriteRequestFrequencyInMilliSeconds>500</WriteRequestFrequencyInMilliSeconds>
+    <NextSampleTimeGapInMilliSeconds>500</NextSampleTimeGapInMilliSeconds>
+
+    <UseRandomValueSeriesIds>False</UseRandomValueSeriesIds>
+    <ValueSeriesIdStart>1</ValueSeriesIdStart>
+
+    <WriteTagValues>True</WriteTagValues>
+    <WriteAlarmValues>True</WriteAlarmValues>
+    <WriteDataRangeValues>True</WriteDataRangeValues>
+
+    <LatencyLogEnabled>True</LatencyLogEnabled>
+    <LogDirectory>D:\PHWriteNFRTestLogs</LogDirectory>
+    <DataLevelValidationEnabled>False</DataLevelValidationEnabled>
+
+    <!-- For Fast Filling of PHDB and Read-Only NFR Test-->
+    <WriteFast>True</WriteFast>
+    <DataAvailabilityDurationInHours>24</DataAvailabilityDurationInHours>
+    <!-- data start datetime will be current day 00:00:00 AM-->
+    <FastWriteRequestRangeInSeconds>30</FastWriteRequestRangeInSeconds>
+    <StopWritingAfterMaxTvssBufferEnabled>False</StopWritingAfterMaxTvssBufferEnabled>
+    <MaxTvssBufferSizeInGB>1</MaxTvssBufferSizeInGB>
+    <WaitTimeAfterFastPrefillingInSeconds>300</WaitTimeAfterFastPrefillingInSeconds>
+    <WaitForCompleteForwarding>True</WaitForCompleteForwarding>
+    <FastWriteMaxWriteRequests>0</FastWriteMaxWriteRequests>
+    <TvsStoragePath>C:\ProgramData\Siemens\PHCoreLog\Storages</TvsStoragePath>
+
+    <WalFileCountLogEnabled>True</WalFileCountLogEnabled>
+    <WalFileCountLogFrequencyInMilliSeconds>1000</WalFileCountLogFrequencyInMilliSeconds>
+
+    <PhCoreLoggingEnabled>True</PhCoreLoggingEnabled>
+  </TestCaseConfiguration>
+
+  <TestCaseDescription>
+    <TestType>NFR</TestType>
+    <TestScenario>WinCCUA_Gen_PHCore</TestScenario>
+    <TestCategory>Write</TestCategory>
+    <TestCaseName>TC_PHCoreLoggingFastWrite</TestCaseName>
+    <Description>Write NFR test to measure local latency and archiving latency for a given constant write load</Description>
+  </TestCaseDescription>
+
+</ProcessHistorian>

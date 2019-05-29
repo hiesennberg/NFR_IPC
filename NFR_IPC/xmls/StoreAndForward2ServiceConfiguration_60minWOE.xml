@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Siemens>
+  <ProcessHistorian>
+    <StoreAndForward2TvssController>
+      <Redundancy ControlType="External"/>
+    </StoreAndForward2TvssController>
+    <StoreAndForward2DataChannelManagers>
+      <DataChannelManager Name="StoreAndForward2Service" Type="TcpDataChannelManager" MaxConnections="100" KeepAliveTimeout="6000" Comment="Standalone configuration">
+        <ListenerDataChannels>
+          <DataChannel Name="StoreAndForward2Listener" EndpointAddress="*:2228" />
+        </ListenerDataChannels>
+        <!--<ArchiveForwarderDataChannels>
+          <DataChannel Name="StoreAndForward2Archive1" EndpointAddress="localhost:2227" Comment="Replace localhost with PHServer machine name."/>
+        </ArchiveForwarderDataChannels>-->
+        <CertificateManager Name="StoreAndForward2CertificateManager">
+          <Certificates>
+            <CertificateDisabled Name="Default" Subject="PH_SF2_Certificate"/>
+          </Certificates>
+        </CertificateManager>
+      </DataChannelManager>
+    </StoreAndForward2DataChannelManagers>
+    <TVSEnvironment>
+      <StoragePaths>
+        <StoragePath
+          ID="1"
+          DiskPath="C:\ProgramData\Siemens\PHCoreLog\Storages"
+          Name="DefaultDataStorage"
+          UsageType="1"
+          MaxDataStorages="10"
+          FreeStorageSpaceWarningPercent="30"
+          FreeStorageSpaceAlarmPercent="10"
+          FreeStorageSpaceHysteresisPercent="5"/>
+      </StoragePaths>
+      <TimeValueSeriesStorage>
+        <ContainerConfiguration TVSDataContainerType="Basic">
+          <!--OperationalMode={ Native, WriteAheadLogOnly, Volatile}-->
+          <!--MigrationStrategy={ Dispose, Migrate }-->
+          <RuntimeData
+            OperationalMode="Native"
+            WalFileSizeInMb="10"
+            WalFileDeletionFrequencyInSeconds="10"
+            FreeStorageSpaceCheckCycleSeconds="10"
+            WriteRequestBufferReloadThresholdPercentage="20"
+            MaxMaterializedWriteRequestCount="500"
+            VolatileModeMaxBufferCount="36000"
+            DetailedLogs="False"
+            DebugRetainAllWALData="False"
+            ObsoleteContainerCheckFrequencyInSeconds="3600"
+            SegmentValidityInSeconds="2419200"
+            DvsMaxTimeToLiveInSeconds="21600"
+            DvsTimeToLiveCheckFrequencyInSeconds="300"
+            MigrationStrategy = "Dispose"
+          />
+          <ContainerHeader
+            TagsDvsTimeRangeInSeconds="3600"
+            TagsMaxDvsSize="1000000000"
+            AlarmsDvsTimeRangeInSeconds="3600"
+            AlarmsTagsMaxDvsSize="1000000000"
+            SegmentCreationFrequencyInSeconds="86400"
+            SegmentSizeInGb="1"
+          />
+        </ContainerConfiguration>
+      </TimeValueSeriesStorage>
+    </TVSEnvironment>
+  </ProcessHistorian>
+</Siemens>

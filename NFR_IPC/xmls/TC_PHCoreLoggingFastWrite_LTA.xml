@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProcessHistorian>
+  <TestCaseConfiguration>
+    <UseFixedDataSourceIdentity>True</UseFixedDataSourceIdentity>
+    <DataSourceSystemId>1.0.0.0.0.0</DataSourceSystemId>
+    <DataSourceNodeId>2.0.0.0.0.0</DataSourceNodeId>
+    <DataSourceTypeId>2</DataSourceTypeId>
+    <!-- Value=1 for WinCC Classic and Value=2 for WinCC UA-->
+
+    <ArchiveDataProgressNotificationEnabled>True</ArchiveDataProgressNotificationEnabled>
+    <LiveDataSubscriptionEnabled>False</LiveDataSubscriptionEnabled>
+
+    <TimeBound>False</TimeBound>
+    <DurationInMinutes>0</DurationInMinutes>
+    <TestMaxTimeoutInMinutes>-1</TestMaxTimeoutInMinutes>
+
+    <NumberOfTags>200</NumberOfTags>
+    <NumberOfAlarmMessages>10</NumberOfAlarmMessages>
+    <WriteRequestFrequencyInMilliSeconds>500</WriteRequestFrequencyInMilliSeconds>
+    <NextSampleTimeGapInMilliSeconds>500</NextSampleTimeGapInMilliSeconds>
+
+    <UseRandomValueSeriesIds>False</UseRandomValueSeriesIds>
+    <ValueSeriesIdStart>1</ValueSeriesIdStart>
+
+    <WriteTagValues>True</WriteTagValues>
+    <WriteAlarmValues>True</WriteAlarmValues>
+    <WriteDataRangeValues>False</WriteDataRangeValues>
+
+    <LatencyLogEnabled>True</LatencyLogEnabled>
+    <LogDirectory>C:\PHWriteNFRTestLogs</LogDirectory>
+    <DataLevelValidationEnabled>False</DataLevelValidationEnabled>
+
+    <!-- For Fast Filling of PHDB and Read-Only NFR Test-->
+    <WriteFast>True</WriteFast>
+    <DataAvailabilityDurationInHours>24</DataAvailabilityDurationInHours>
+    <!-- data start datetime will be current day 00:00:00 AM-->
+    <FastWriteRequestRangeInSeconds>10</FastWriteRequestRangeInSeconds>
+    <StopWritingAfterMaxTvssBufferEnabled>False</StopWritingAfterMaxTvssBufferEnabled>
+    <MaxTvssBufferSizeInGB>1</MaxTvssBufferSizeInGB>
+    <WaitTimeAfterFastPrefillingInSeconds>900</WaitTimeAfterFastPrefillingInSeconds>
+    <WaitForCompleteForwarding>True</WaitForCompleteForwarding>
+    <FastWriteMaxWriteRequests>0</FastWriteMaxWriteRequests>
+    <TvsStoragePath>C:\ProgramData\Siemens\PHCoreLog\Storages</TvsStoragePath>
+
+    <WalFileCountLogEnabled>True</WalFileCountLogEnabled>
+    <WalFileCountLogFrequencyInMilliSeconds>1000</WalFileCountLogFrequencyInMilliSeconds>
+    <QueryRangeStartOffsetInHours>4</QueryRangeStartOffsetInHours>
+
+    <LongTermArchiveEnabled>True</LongTermArchiveEnabled>
+    <PercentageOfLongTermArchiveRelevantTags>50</PercentageOfLongTermArchiveRelevantTags>
+    <LongTermArchiveConfigurationFileName>LTAConfiguration.xml</LongTermArchiveConfigurationFileName>
+    <IsDatabaseBackUpEnabledForLta>false</IsDatabaseBackUpEnabledForLta>
+    
+    <PhCoreLoggingEnabled>True</PhCoreLoggingEnabled>
+  </TestCaseConfiguration>
+
+  <TestCaseDescription>
+    <TestType>NFR</TestType>
+    <TestScenario>WinCCUA_Gen_PHCore_LTA</TestScenario>
+    <TestCategory>Write</TestCategory>
+    <TestCaseName>TC_FastWriteTestConfiguration11</TestCaseName>
+    <Description>Write NFR test to measure local latency and archiving latency for a given constant write load</Description>
+  </TestCaseDescription>
+
+</ProcessHistorian>

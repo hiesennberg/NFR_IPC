@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProcessHistorian>
+  <TestCaseConfiguration>
+    <DataSourceSystemId>1.0.0.0.0.0</DataSourceSystemId>
+    <DataSourceNodeId>2.0.0.0.0.0</DataSourceNodeId>
+    <DataSourceTypeId>2</DataSourceTypeId>
+    <!-- Value=1 for WinCC Classic and Value=2 for WinCC UA-->
+
+    <DataStartDateTimeFixed>False</DataStartDateTimeFixed>
+    <DataStartTime>2016-01-01 00:00:00.00 +05:30</DataStartTime>
+
+    <MaximumTags>20</MaximumTags>
+    <TagLoadFactor>10</TagLoadFactor>
+    <ValueSeriesIdStart>1</ValueSeriesIdStart>
+    <DataQueryType>RAW</DataQueryType>
+
+    <QueryRangesInMinutes>180,300,480</QueryRangesInMinutes>
+    <RepeatQueryMaxIterations>5</RepeatQueryMaxIterations>
+
+    <ReadTagValues>True</ReadTagValues>
+    <ReadAlarmValues>False</ReadAlarmValues>
+    <TagsAndAlarmsReadConcurrency>False</TagsAndAlarmsReadConcurrency>
+
+    <IsBasicDataValidationEnabled>True</IsBasicDataValidationEnabled>
+    <ResponseLogEnabled>True</ResponseLogEnabled>
+    <LogDirectory>D:\PHReadNFRTestLogs</LogDirectory>
+
+    <LongTermArchiveEnabled>False</LongTermArchiveEnabled>
+    <QueryOptionsFlagStringValue>LocalLog</QueryOptionsFlagStringValue>
+    <QueryRangeStartOffsetInHours>4</QueryRangeStartOffsetInHours>
+    
+    <IsReadReverseDirectionEnabled>False</IsReadReverseDirectionEnabled>
+    <IsReadPHCoreEnabled>False</IsReadPHCoreEnabled>
+  </TestCaseConfiguration>
+</ProcessHistorian>
